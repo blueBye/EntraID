@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+  {% if user %}
+  <h2>Welcome {{ user.get("name") }}!</h2>
+  <br />
+  <a href="/logout">Logout</a>
+  {% else %}
+  <a href="{{ auth_uri }}">Login</a>
+  {% endif %}
+</body>
+
+</html>
